@@ -24,7 +24,7 @@ function betweenTwoNumbers()
 function largest()
 			{
 				var num1, num2, num3;
-
+				num1 = Number(document.getElementById("maxThreeNumber1").value);
 				num2 = Number(document.getElementById("maxThreeNumber2").value);
 				num3 = Number(document.getElementById("maxThreeNumber3").value);
 
@@ -61,7 +61,7 @@ else if (negPosZero1 == 0) {
 
 // if number is less than 0
 else {
-    window.alert("The number is negative");
+    alert("The number is negative");
 }
 }
 
@@ -72,14 +72,27 @@ function divisibleNum(){
     divisibleNumberCheck= Number(document.getElementById("divisibleNumber").value);
 
     if(!(divisibleNumberCheck % 5) && !(divisibleNumberCheck % 11)){
-        window.alert("Number is divisible by 5 and 11");
+        alert("Number is divisible by 5 and 11");
     }
     else {
-        window.alert("Number is not divisible by 5 and 11");
+        alert("Number is not divisible by 5 and 11");
     }
 }
 
 
-// ---------------Check Whether a number is even or odd---------------------
+// ---------------Check Whether a number is even or odd----------------
+//check if the number is even
+function odd_even(){
+	var no;
+	no=Number(document.getElementById("no_input").value);
+	if(no%2==0)
+	{
+	alert("Even Number");
+	}
+	else
+	{
+	alert("Odd Number");
+	}
+	}
 
-dfdsafdsjkjfksdjkdfsnbjnjfv fskvbfjkgb
+	// ---------------Check Whether a number is even or odd----------------
