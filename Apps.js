@@ -24,7 +24,7 @@ function betweenTwoNumbers()
 function largest()
 			{
 				var num1, num2, num3;
-				num1 = Number(document.getElementById("maxThreeNumber1").value);
+
 				num2 = Number(document.getElementById("maxThreeNumber2").value);
 				num3 = Number(document.getElementById("maxThreeNumber3").value);
 
@@ -65,4 +65,20 @@ else {
 }
 }
 
+// ---------------a number is divisible by 5 and 11 or not---------------------
+function divisibleNum(){
+
+    var divisibleNumberCheck;
+    divisibleNumberCheck= Number(document.getElementById("divisibleNumber").value);
+
+    if(!(divisibleNumberCheck % 5) && !(divisibleNumberCheck % 11)){
+        window.alert("Number is divisible by 5 and 11");
+    }
+    else {
+        window.alert("Number is not divisible by 5 and 11");
+    }
+}
+
+
+// ---------------Check Whether a number is even or odd---------------------
 
