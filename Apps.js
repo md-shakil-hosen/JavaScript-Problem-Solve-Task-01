@@ -96,21 +96,21 @@ function odd_even(){
 	}
 
 	// ---------------Check Whether a Year is leap year or not----------------
-	function check_leapyear(){
-		//define variables
-		var year;
-		//get the entered year from text box 
-		year = document.getElementById("year").value;
- 
-		//three conditions to find out the leap year
-		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
-		{
-			alert(year+" is a leap year");  
-		}
+	var yr, temp;
+	function fun()
+	{
+	  yr = parseInt(document.getElementById("year").value);
+	  if(yr)
+	  {
+		temp = document.getElementById("resPara");
+		temp.style.display = "block";
+		if((yr%4==0) && (yr%100!=0))
+		  document.getElementById("res").innerHTML = "a Leap";
+		else if(yr%400==0)
+		  document.getElementById("res").innerHTML = "a Leap";
 		else
-		{
-			alert(year+" is not a leap year");  
-		}
+		  document.getElementById("res").innerHTML = "not a Leap";
+	  }
 	}
 	
 	
