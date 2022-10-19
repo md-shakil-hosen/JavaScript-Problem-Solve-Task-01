@@ -113,4 +113,9 @@ function odd_even(){
 	  }
 	}
 	
-	
+	// ------------------ Check Whether a Character is an Alphabet or not----------------
+	var c = 5;
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+    console.log(c + " is an alphabet.")
+else
+    console.log(c + " is not an alphabet.")
